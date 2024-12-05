@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>@yield('title') | My Blog</title>
-    </head>
-    <body>
-        <div class="container">
-            @yield('content')
-        </div>
-    </body>
-</html>
+<body>
+<!-- 引入導航欄 -->
+@include('layouts.partials.navigation')
+
+<!-- 主體內容區 -->
+<div class="container">
+    @yield('content')
+</div>
+</body>
